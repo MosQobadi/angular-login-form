@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="mb-5">Active Users</h1>
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Handle</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let user of this.activeUsers">
+        <tr>
+          <th>{{ user._id }}</th>
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.email }}</td>
+          <button class="btn bg-danger text-white m-2">Sign out</button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container mt-5">
+  <h1>{{ item }}</h1>
+  <form [formGroup]="registerForm">
+    <div class="mb-5">
+      <label for="first-name">First Name: </label>
+      <input
+        class="form-control"
+        id="first-name"
+        type="text"
+        formControlName="firstName"
+      />
+    </div>
+    <div class="mb-5">
+      <label for="last-name">Name: </label>
+      <input
+        class="form-control"
+        id="last-name"
+        type="text"
+        formControlName="lastName"
+      />
+    </div>
+    <div class="mb-5">
+      <label for="email">Email: </label>
+      <input
+        class="form-control"
+        id="email"
+        type="text"
+        formControlName="email"
+      />
+    </div>
+    <div>
+      <label for="password">Password: </label>
+      <input
+        class="form-control"
+        id="password"
+        type="text"
+        formControlName="password"
+      />
+    </div>
+    <button (click)="onSubmit()" class="btn btn-primary mt-5">Submit</button>
+  </form>
+  <!-- <button (click)="deleteAllUsers()" class="btn btn-danger mt-5">
+    Delete All Users
+  </button> -->
+  <div><button routerLink="/" class="btn btn-secondary mt-2">Home</button></div>
+  <!-- <button (click)="myFunc()">Persons</button> -->
+</div>

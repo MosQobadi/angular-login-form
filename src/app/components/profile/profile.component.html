@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <app-user-details></app-user-details>
+  <button routerLink="/" class="btn btn-secondary">Home</button>
+  <button
+    routerLink="/"
+    (click)="logOutUser()"
+    class="btn bg-danger text-white m-3"
+  >
+    Log out
+  </button>
+  <button class="btn btn-secondary m-2">
+    <a class="btn" routerLink="users">Users</a>
+  </button>
+</div>
